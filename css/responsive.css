@@ -321,6 +321,17 @@
   #premium-bottom .overflow-y-auto {
     height: 200px !important;
   }
+  .premium-title {
+    font-size: 24px !important;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .premium-line1,
+  .premium-line2 {
+    display: block !important;
+  }
 
   /* ===== БЛОК FAQ ===== */
   #faq {
