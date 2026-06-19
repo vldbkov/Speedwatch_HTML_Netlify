@@ -142,16 +142,53 @@
 
   /* ===== ШАПКА ===== */
   #header {
-    padding: 8px 4% !important;
+    padding: 12px 4% !important;
+    background-color: #0a1128 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    border-bottom: 2px solid #ff8c00 !important;
+    height: auto !important;
+    min-height: auto !important;
   }
-  #header > div:last-child {
+
+  #burger-btn {
+    display: block !important;
+  }
+  #header-menu {
+    display: none !important;
+    flex-direction: column !important;
+    align-items: center !important;
     gap: 6px !important;
+    width: 100% !important;
   }
-  #header a {
-    font-size: 12px !important;
+  #header-menu.open {
+    display: flex !important;
+  }
+
+  #header > div:first-child {
+    gap: 8px !important;
   }
   #header #logo-speedwatch {
-    font-size: 18px !important;
+    font-size: 22px !important;
+  }
+  #header > div:last-child {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+  #header a {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 4px !important;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+  #header a:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
   }
 
   /* ===== БЛОК HOME ===== */

@@ -180,12 +180,15 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
 <a name="header" style="font-size:0;"></a>
 <div id="header" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #0a1128; font-family: Roboto; z-index: 1000; display: flex; align-items: center; justify-content: space-between; padding: 0 5%; box-sizing: border-box; flex-wrap: wrap; min-height: 37px;">
 
-<div style="display: flex; align-items: center; gap: 10px;">
- <img src="img/logo_sw_dark_back_32x32.png" alt="logo" style="height: 32px; width: auto;">
- <div id="logo-speedwatch" onclick="location.href='#home'" style="cursor: pointer; color: #f0f2f5; font-size: 24px; font-weight: 700; transition: color 0.2s;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">SpeedWatch</div>
+<div style="display: flex; align-items: center; gap: 10px; width: 100%; justify-content: space-between;">
+ <div style="display: flex; align-items: center; gap: 10px;">
+  <img src="img/logo_sw_dark_back_32x32.png" alt="logo" style="height: 32px; width: auto;">
+  <div id="logo-speedwatch" onclick="location.href='#home'" style="cursor: pointer; color: #f0f2f5; font-size: 24px; font-weight: 700; transition: color 0.2s;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">SpeedWatch</div>
+ </div>
+ <button id="burger-btn" style="display: none; background: none; border: none; color: #f0f2f5; font-size: 28px; cursor: pointer;">☰</button>
 </div>
 
- <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end;">
+ <div id="header-menu" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; width: 100%;">
 <a href="https://vk.com/speedwatch_soft" target="_blank" rel="noopener noreferrer" style="color: #f0f2f5; font-size: 18px; font-weight: 700; text-decoration: none;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">VK сообщество</a>
   <a href="#features" style="color: #f0f2f5; font-size: 18px; font-weight: 700; text-decoration: none;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">Возможности</a>
   <a href="#premium" style="color: #f0f2f5; font-size: 18px; font-weight: 700; text-decoration: none;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">Premium</a>
@@ -1144,5 +1147,23 @@ document.querySelector('.faq-question .faq-icon').innerHTML = '▲';
  }
 })();
 </script>
+
+<script>
+// ======================================================
+// БУРГЕР-МЕНЮ ДЛЯ МОБИЛЬНЫХ
+// ======================================================
+document.addEventListener('DOMContentLoaded', function() {
+  var burger = document.getElementById('burger-btn');
+  var menu = document.getElementById('header-menu');
+  if (burger && menu) {
+    burger.addEventListener('click', function(event) {
+      event.stopPropagation();
+      menu.classList.toggle('open');
+      burger.textContent = menu.classList.contains('open') ? '✕' : '☰';
+    });
+  }
+});
+</script>
+
 </body>
 </html>
