@@ -194,6 +194,7 @@
   /* ===== БЛОК HOME ===== */
   #home {
     padding: 20px 12px 10px 12px !important;
+    min-height: auto !important;
   }
 
   .home-success-title {
@@ -238,7 +239,15 @@
   }
   #home .download-btn {
     font-size: 16px !important;
-    padding: 12px 30px !important;
+    padding: 10px 30px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-btn-wrapper {
+    margin-top: 0 !important;
+  }
+  #home .home-download-btn {
+    margin-bottom: 0 !important;
   }
 
   /* ===== БЛОК ABOUT ===== */
