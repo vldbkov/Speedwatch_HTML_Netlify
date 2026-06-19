@@ -321,6 +321,12 @@
   #premium-bottom .overflow-y-auto {
     height: 200px !important;
   }
+
+  /* Скрыть желтые стрелки в Premium на мобильных */
+  #premium a[href="#premium-bottom"],
+  #premium a[href="#faq"] {
+    display: none !important;
+  }
   .premium-title {
     font-size: 24px !important;
     max-width: 280px;
