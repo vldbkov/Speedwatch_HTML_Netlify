@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Страница не найдена — SpeedWatch</title>
+ <meta name="description" content="Страница не найдена. Вернитесь на главную страницу SpeedWatch — программа для мониторинга скорости интернета.">
+ <meta name="robots" content="noindex, follow">
+
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body {
+   background-color: #0a1128;
+   font-family: 'Roboto', 'Arial', sans-serif;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px 20px;
+  }
+
+  .error-container {
+   max-width: 600px;
+   text-align: center;
+  }
+
+  .error-code {
+   font-size: 120px;
+   font-weight: 700;
+   color: #ff8c00;
+   line-height: 1;
+   margin-bottom: 20px;
+  }
+
+  .error-title {
+   font-size: 32px;
+   font-weight: 700;
+   color: #ffffff;
+   margin-bottom: 20px;
+  }
+
+  .error-text {
+   font-size: 18px;
+   color: #cccccc;
+   line-height: 1.55;
+   margin-bottom: 30px;
+  }
+
+  .home-link {
+   display: inline-block;
+   background-color: #ff8c00;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 700;
+   text-decoration: none;
+   padding: 14px 40px;
+   border-radius: 30px;
+   transition: background-color 0.2s;
+  }
+
+  .home-link:hover {
+   background-color: #e07c00;
+  }
+
+  .nav-links {
+   margin-top: 40px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+  }
+
+  .nav-links a {
+   color: #ff8c00;
+   text-decoration: none;
+   font-size: 16px;
+   transition: color 0.2s;
+  }
+
+  .nav-links a:hover {
+   color: #ffffff;
+  }
+
+  .footer-note {
+   margin-top: 50px;
+   font-size: 14px;
+   color: #666666;
+  }
+
+  .footer-note a {
+   color: #ff8c00;
+   text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+   .error-code { font-size: 80px; }
+   .error-title { font-size: 24px; }
+   .error-text { font-size: 16px; }
+   .home-link { font-size: 18px; padding: 12px 30px; }
+  }
+ </style>
+</head>
+<body>
+
+<div class="error-container">
+ <div class="error-code">404</div>
+ <h1 class="error-title">Страница не найдена</h1>
+ <p class="error-text">
+  К сожалению, такой страницы не существует.<br>
+  Возможно, ссылка была устаревшей или в адресе допущена ошибка.
+ </p>
+
+ <a href="/" class="home-link">Вернуться на главную</a>
+
+ <div class="nav-links">
+  <a href="/#about">О программе</a>
+  <a href="/#features">Возможности</a>
+  <a href="/#premium">Premium</a>
+  <a href="/#faq">FAQ</a>
+ </div>
+
+ <div class="footer-note">
+  Свяжитесь с нами: <a href="mailto:help_speedwatch@mail.ru">help_speedwatch@mail.ru</a>
+ </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /feedback.html?*
+
+Sitemap: https://speedwatch-soft.netlify.app/sitemap.xml

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Обратная связь — SpeedWatch</title>
+ <meta name="description" content="Форма обратной связи SpeedWatch. Сообщите о проблеме, задайте вопрос или предложите сотрудничество.">
+ <meta name="robots" content="noindex, follow">
+
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body {
+   background-color: #0a1128;
+   font-family: 'Roboto', 'Arial', sans-serif;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px 20px;
+  }
+
+  .form-container {
+   max-width: 600px;
+   width: 100%;
+   background-color: #f0f2f5;
+   border-radius: 16px;
+   padding: 40px 30px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+   font-size: 28px;
+   font-weight: 700;
+   color: #1a2b4c;
+   text-align: center;
+   margin-bottom: 10px;
+  }
+
+  .subtitle {
+   text-align: center;
+   font-size: 14px;
+   color: #666666;
+   margin-bottom: 30px;
+  }
+
+  .form-group {
+   margin-bottom: 20px;
+  }
+
+  label {
+   display: block;
+   font-size: 16px;
+   font-weight: 500;
+   color: #333333;
+   margin-bottom: 8px;
+  }
+
+  label .required {
+   color: #ff8c00;
+  }
+
+  input, select, textarea {
+   width: 100%;
+   padding: 12px;
+   font-size: 16px;
+   font-family: inherit;
+   border: 1px solid #cccccc;
+   border-radius: 8px;
+   background-color: #ffffff;
+   transition: border-color 0.2s;
+  }
+
+  input:focus, select:focus, textarea:focus {
+   outline: none;
+   border-color: #ff8c00;
+  }
+
+  textarea {
+   resize: vertical;
+   min-height: 100px;
+  }
+
+  .captcha-container {
+   margin: 20px 0;
+   display: flex;
+   justify-content: center;
+  }
+
+  .consent-label {
+   display: flex;
+   align-items: flex-start;
+   gap: 10px;
+   font-size: 14px;
+   font-weight: normal;
+   cursor: pointer;
+  }
+
+  .consent-label input {
+   width: 18px;
+   height: 18px;
+   margin-top: 2px;
+  }
+
+  .consent-label a {
+   color: #ff8c00;
+   text-decoration: none;
+  }
+
+  .consent-label a:hover {
+   text-decoration: underline;
+  }
+
+  button {
+   width: 100%;
+   background-color: #ff8c00;
+   color: white;
+   font-size: 18px;
+   font-weight: 700;
+   padding: 14px;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   transition: background-color 0.2s;
+  }
+
+  button:hover {
+   background-color: #e07c00;
+  }
+
+  button:disabled {
+   background-color: #cccccc;
+   cursor: not-allowed;
+  }
+
+  .error-message {
+   background-color: #ffebee;
+   color: #c62828;
+   padding: 12px;
+   border-radius: 8px;
+   font-size: 14px;
+   margin-bottom: 20px;
+   display: none;
+  }
+
+  .success-message {
+   background-color: #e8f5e9;
+   color: #2e7d32;
+   padding: 20px;
+   border-radius: 8px;
+   text-align: center;
+   display: none;
+  }
+
+  .success-message a {
+   color: #ff8c00;
+   text-decoration: none;
+   font-weight: 700;
+  }
+
+  .back-link {
+   display: block;
+   text-align: center;
+   margin-top: 20px;
+   color: #666666;
+   font-size: 14px;
+  }
+
+  .back-link a {
+   color: #ff8c00;
+   text-decoration: none;
+  }
+
+  hr {
+   margin: 20px 0;
+   border: none;
+   border-top: 1px solid #dddddd;
+  }
+ </style>
+</head>
+<body>
+
+<div class="form-container" id="formContainer">
+ <h1>Обратная связь SpeedWatch</h1>
+ <div class="subtitle">Заполните форму — мы ответим в течение 24 часов</div>
+
+ <div id="errorMessage" class="error-message"></div>
+ <div id="successMessage" class="success-message"></div>
+
+ <form id="feedbackForm" method="POST">
+  <div class="form-group">
+   <label>Ваше имя <span class="required">*</span></label>
+   <input type="text" name="entry.301534326" required>
+  </div>
+
+  <div class="form-group">
+   <label>Тема обращения <span class="required">*</span></label>
+   <select name="entry.653318579" required>
+    <option value="">-- Выберите тему --</option>
+    <option value="👑 Приобрести Premium">👑 Приобрести Premium</option>
+    <option value="⚠️ Техническая проблема">⚠️ Техническая проблема</option>
+    <option value="💼 Сотрудничество">💼 Сотрудничество</option>
+    <option value="❓ Задать вопрос">❓ Задать вопрос</option>
+   </select>
+  </div>
+
+  <div class="form-group">
+   <label>Сообщение <span class="required">*</span></label>
+   <textarea name="entry.1534881546" required></textarea>
+  </div>
+
+  <div class="form-group">
+   <label>Версия SpeedWatch</label>
+   <input type="text" name="entry.226972610" placeholder="например: 1.2.0" value="1.2.0">
+  </div>
+
+  <div class="form-group">
+   <label>Оценка (1–5)</label>
+   <input type="number" name="entry.1565460722" min="1" max="5" placeholder="5">
+  </div>
+
+  <hr>
+
+  <!-- Контейнер для Яндекс Капчи -->
+  <div id="captchaContainer" class="captcha-container" data-sitekey="ВАШ_CLIENT_KEY"></div>
+
+  <!-- Чекбокс согласия с Политикой конфиденциальности -->
+  <div class="form-group">
+   <label class="consent-label">
+    <input type="checkbox" id="consentCheckbox" required>
+    <span>Я ознакомлен и согласен с <a href="privacy.html" target="_blank">Политикой конфиденциальности</a> и даю согласие на обработку персональных данных</span>
+   </label>
+  </div>
+
+  <button type="submit" id="submitBtn" disabled>Отправить</button>
+ </form>
+
+ <div class="back-link">
+  <a href="index.html">← Вернуться на главную</a>
+ </div>
+</div>
+
+<!-- Скрипт Яндекс Капчи -->
+<script src="https://smartcaptcha.yandexcloud.net/captcha.js?render=onload&onload=onCaptchaReady" defer></script>
+
+<script>
+ // Глобальная переменная для токена капчи
+ let captchaToken = null;
+ let captchaLoaded = false;
+
+ // Функция, которую вызовет капча после загрузки
+ window.onCaptchaReady = function() {
+  captchaLoaded = true;
+  console.log('Капча загружена');
+  updateSubmitButton();
+ };
+
+ // Функция обновления состояния кнопки
+ function updateSubmitButton() {
+  const btn = document.getElementById('submitBtn');
+  const consent = document.getElementById('consentCheckbox');
+  if (captchaLoaded && captchaToken && consent && consent.checked) {
+   btn.disabled = false;
+  } else {
+   btn.disabled = true;
+  }
+ }
+
+ // Обработчик отправки формы
+ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  if (!captchaToken) {
+   showError('Пожалуйста, подтвердите, что вы не робот');
+   return;
+  }
+
+  if (!document.getElementById('consentCheckbox').checked) {
+   showError('Пожалуйста, подтвердите согласие на обработку персональных данных');
+   return;
+  }
+
+  // Скрываем старые сообщения
+  document.getElementById('errorMessage').style.display = 'none';
+  document.getElementById('successMessage').style.display = 'none';
+
+  // Собираем данные формы
+  const formData = new FormData(this);
+  formData.append('captcha', captchaToken);
+
+  // Отправляем данные
+  const submitBtn = document.getElementById('submitBtn');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Отправка...';
+
+  // Здесь нужен ваш серверный обработчик
+  // Пока имитируем отправку (заглушка)
+  setTimeout(() => {
+   submitBtn.textContent = 'Отправить';
+   submitBtn.disabled = false;
+   showSuccess();
+  }, 1500);
+ });
+
+ // Функция показа ошибки
+ function showError(msg) {
+  const errorDiv = document.getElementById('errorMessage');
+  errorDiv.textContent = msg;
+  errorDiv.style.display = 'block';
+ }
+
+ // Функция показа успеха
+ function showSuccess() {
+  const formContainer = document.getElementById('formContainer');
+  const successDiv = document.getElementById('successMessage');
+  successDiv.innerHTML = '✅ Спасибо! Ваше сообщение отправлено.<br><a href="/">Вернуться на главную</a>';
+  successDiv.style.display = 'block';
+  document.getElementById('feedbackForm').style.display = 'none';
+  document.querySelector('.back-link').style.display = 'none';
+ }
+
+ // Функция, которую вызовет капча когда получит токен
+ window.onCaptchaSuccess = function(token) {
+  captchaToken = token;
+  updateSubmitButton();
+ };
+
+ window.onCaptchaError = function() {
+  captchaToken = null;
+  updateSubmitButton();
+  showError('Ошибка загрузки капчи. Пожалуйста, обновите страницу.');
+ };
+
+ // Слушатель изменения чекбокса
+ document.addEventListener('DOMContentLoaded', function() {
+  const consentCheckbox = document.getElementById('consentCheckbox');
+  if (consentCheckbox) {
+   consentCheckbox.addEventListener('change', function() {
+    updateSubmitButton();
+   });
+  }
+  updateSubmitButton();
+ });
+</script>
+
+<!-- Дополнительный скрипт для интеграции с капчей -->
+<script>
+ // Если капча поддерживает колбэк на успех
+ window.smartCaptcha = {
+  onSuccess: function(token) {
+   window.onCaptchaSuccess(token);
+  },
+  onError: function() {
+   window.onCaptchaError();
+  }
+ };
+</script>
+
+</body>
+</html>

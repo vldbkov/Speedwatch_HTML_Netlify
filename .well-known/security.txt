@@ -1,0 +1,7 @@
+# This is the security.txt file for SpeedWatch
+# See https://securitytxt.org for more information
+
+Contact: mailto:help_speedwatch@mail.ru
+Expires: 2027-04-27T10:00:00Z
+Preferred-Languages: ru, en
+Policy: https://speedwatch.tilda.ws/#faq

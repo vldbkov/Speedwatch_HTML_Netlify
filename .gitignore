@@ -1,0 +1,20 @@
+# Системные
+.DS_Store
+Thumbs.db
+
+# Редакторы
+.vscode/
+.idea/
+*.sublime-*
+
+# Логи
+*.log
+logs/
+
+# Временные
+*.tmp
+*.swp
+*~
+
+temp/
+1
