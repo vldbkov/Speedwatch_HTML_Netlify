@@ -1,0 +1,324 @@
+/* ====================================================== */
+/* АДАПТИВНАЯ ВЁРСТКА — MEDIA QUERIES                    */
+/* ====================================================== */
+
+/* ПЛАНШЕТЫ (768px – 1024px) */
+@media screen and (max-width: 1024px) {
+
+  /* Шапка */
+  #header {
+    height: auto !important;
+    padding: 10px 5% !important;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #header > div:first-child {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  #header > div:last-child {
+    flex: 1 1 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #header a {
+    font-size: 14px !important;
+  }
+
+  /* Блок HOME */
+  #home .text {
+    font-size: 18px !important;
+  }
+  #home .icon {
+    width: 32px !important;
+  }
+  #home .icon img {
+    width: 32px !important;
+  }
+
+  /* Блок ABOUT */
+  #about h2 {
+    font-size: 28px !important;
+  }
+  #about .swiper {
+    height: 400px !important;
+  }
+
+  /* Блок FEATURES */
+  #features .flex-wrap > div {
+    flex: 1 1 45% !important;
+    min-width: 200px !important;
+  }
+  #features h2 {
+    font-size: 20px !important;
+  }
+  #features h3 {
+    font-size: 18px !important;
+  }
+  #features p {
+    font-size: 16px !important;
+  }
+
+  /* Блок PREMIUM */
+  #premium {
+    height: auto !important;
+    padding: 10px 10px 40px 10px !important;
+  }
+  #premium .swiper {
+    height: 350px !important;
+  }
+  #premium h2 {
+    font-size: 28px !important;
+  }
+  #premium h3 {
+    font-size: 20px !important;
+  }
+  #premium .flex-wrap {
+    flex-direction: column !important;
+  }
+  #premium .flex-wrap > div {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+  }
+  #premium-bottom {
+    flex-direction: column !important;
+    padding-top: 20px !important;
+  }
+  #premium-bottom > div {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+  #premium-bottom .overflow-y-auto {
+    height: 300px !important;
+  }
+
+  /* Блок FAQ */
+  #faq h2 {
+    font-size: 28px !important;
+  }
+  .faq-question {
+    font-size: 16px !important;
+    padding: 14px 18px !important;
+  }
+  .faq-answer p {
+    font-size: 14px !important;
+  }
+
+  /* Блок REQUIREMENTS */
+  #requirements .flex-wrap {
+    gap: 12px !important;
+  }
+  #requirements .flex-wrap > div {
+    padding: 8px 14px !important;
+  }
+  #requirements .flex-wrap > div span {
+    font-size: 15px !important;
+  }
+
+  /* ФУТЕР */
+  #footer {
+    height: auto !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    padding: 30px 5% !important;
+  }
+  #footer > div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  #footer .flex-column {
+    gap: 6px !important;
+  }
+}
+
+/* ТЕЛЕФОНЫ (до 767px) */
+@media screen and (max-width: 767px) {
+
+  /* Шапка */
+  #header {
+    padding: 8px 4% !important;
+  }
+  #header > div:last-child {
+    gap: 6px !important;
+  }
+  #header a {
+    font-size: 12px !important;
+  }
+  #header #logo-speedwatch {
+    font-size: 18px !important;
+  }
+
+  /* Блок HOME */
+  #home {
+    padding: 20px 12px 10px 12px !important;
+  }
+  #home .logo-container {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+  #home .logo-container span {
+    font-size: 32px !important;
+  }
+  #home [style*="display: flex; align-items: center; gap: 55px"] {
+    gap: 20px !important;
+    margin-bottom: 12px !important;
+  }
+  #home [style*="width: 48px; flex-shrink: 0;"] {
+    width: 28px !important;
+  }
+  #home [style*="width: 48px; flex-shrink: 0;"] img {
+    width: 28px !important;
+    height: auto !important;
+  }
+  #home [style*="font-size: 24px; font-weight: 300; color: #cccccc;"] {
+    font-size: 16px !important;
+  }
+  #home [style*="font-size: 38px; font-weight: 700; color: #00c853;"] {
+    font-size: 26px !important;
+  }
+  #home [style*="font-size: 51px; font-weight: 700; color: #cccccc;"] {
+    font-size: 34px !important;
+  }
+  #home .download-btn {
+    font-size: 16px !important;
+    padding: 12px 30px !important;
+  }
+
+  /* Блок ABOUT */
+  #about {
+    padding: 30px 12px !important;
+  }
+  #about h2 {
+    font-size: 22px !important;
+  }
+  #about .flex-wrap {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  #about .flex-wrap > div {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+  }
+  #about ul {
+    font-size: 16px !important;
+  }
+  #about .swiper {
+    height: 280px !important;
+  }
+
+  /* Блок FEATURES */
+  #features {
+    padding: 20px 12px !important;
+  }
+  #features [style*="display: flex; flex-wrap: wrap; justify-content: center; gap: 41px;"] {
+    gap: 24px !important;
+  }
+  #features [style*="flex: 1 1 280px; min-width: 250px; text-align: center;"] {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+  }
+  #features h2 {
+    font-size: 18px !important;
+  }
+  #features h3 {
+    font-size: 16px !important;
+  }
+  #features p {
+    font-size: 14px !important;
+  }
+  #features img[style*="width: 100px;"] {
+    width: 60px !important;
+    height: auto !important;
+  }
+  #features [style*="flex: 1 1 250px; min-width: 290px;"] {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+  }
+  #features [style*="flex: 1 1 200px; min-width: 180px;"] {
+    flex: 1 1 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* Блок PREMIUM */
+  #premium h2 {
+    font-size: 22px !important;
+  }
+  #premium h3 {
+    font-size: 16px !important;
+  }
+  #premium .swiper {
+    height: 250px !important;
+  }
+  #premium .flex-wrap > div {
+    flex: 1 1 100% !important;
+  }
+  #premium-bottom > div {
+    flex: 1 1 100% !important;
+  }
+  #premium-bottom .overflow-y-auto {
+    height: 200px !important;
+  }
+
+  /* Блок FAQ */
+  #faq {
+    padding: 30px 12px !important;
+  }
+  #faq h2 {
+    font-size: 22px !important;
+  }
+  .faq-question {
+    font-size: 14px !important;
+    padding: 12px 14px !important;
+  }
+  .faq-answer p {
+    font-size: 13px !important;
+  }
+
+  /* Блок REQUIREMENTS */
+  #requirements .flex-wrap {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  #requirements .flex-wrap > div {
+    width: 100% !important;
+    max-width: 300px !important;
+    justify-content: center !important;
+  }
+  #requirements .flex-wrap > div span {
+    font-size: 14px !important;
+  }
+
+  /* ФУТЕР */
+  #footer {
+    padding: 20px 4% !important;
+    gap: 20px !important;
+  }
+  #footer > div {
+    width: 100% !important;
+  }
+  #footer .flex-column {
+    gap: 4px !important;
+  }
+  #footer .flex-column span,
+  #footer .flex-column a {
+    font-size: 12px !important;
+  }
+
+  /* СЛАЙДЕРЫ — общие правки */
+  .swiper {
+    height: auto !important;
+    min-height: 200px !important;
+  }
+  .swiper-slide img {
+    object-fit: contain !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
