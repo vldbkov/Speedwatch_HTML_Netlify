@@ -13,7 +13,6 @@
   <meta property="og:description" content="SpeedWatch фиксирует факты низкой скорости интернета и формирует доказательную базу для жалоб провайдеру.">
   <meta property="og:image" content="https://speedwatch-soft.netlify.app/img/logo_56x56.png">
 	<!-- Основные заголовки безопасности в HEAD -->
-	<meta http-equiv="X-Frame-Options" content="DENY">
 	<meta http-equiv="X-Content-Type-Options" content="nosniff">
 	<meta http-equiv="X-XSS-Protection" content="1; mode=block">
 	<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
@@ -135,7 +134,7 @@
  document.addEventListener('DOMContentLoaded', function() {
   new Swiper('.swiper', {
    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-   loop: true,
+   loop: false,
    breakpoints: {
     320: {
       slidesPerView: 1,
