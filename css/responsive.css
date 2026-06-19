@@ -164,6 +164,12 @@
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
+    word-break: break-word;
+  }
+
+  .home-success-line1,
+  .home-success-line2 {
+    display: block !important;
   }
 
   #home .logo-container {
