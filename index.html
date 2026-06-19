@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
  <div id="logo-speedwatch" onclick="location.href='#home'" style="cursor: pointer; color: #f0f2f5; font-size: 24px; font-weight: 700; transition: color 0.2s;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">SpeedWatch</div>
 </div>
 
- <div style="display: flex; gap: 20px;">
+ <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end;">
 <a href="https://vk.com/speedwatch_soft" target="_blank" rel="noopener noreferrer" style="color: #f0f2f5; font-size: 18px; font-weight: 700; text-decoration: none;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">VK сообщество</a>
   <a href="#features" style="color: #f0f2f5; font-size: 18px; font-weight: 700; text-decoration: none;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">Возможности</a>
   <a href="#premium" style="color: #f0f2f5; font-size: 18px; font-weight: 700; text-decoration: none;" onmouseover="this.style.color='#004499'" onmouseout="this.style.color='#f0f2f5'">Premium</a>
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
     </div>
 
     <div style="flex: 1 1 45%; min-width: 280px;">
-     <div class="swiper" style="width: 100%; height: 529px;">
+     <div class="swiper" style="width: 100%; height: auto; min-height: 300px;">
       <div class="swiper-wrapper">
        <div class="swiper-slide"><img loading="lazy" src="img/tilda_images/vkladka_monitoring.png" alt="SpeedWatch — вкладка Мониторинг" style="width: 100%; height: 100%; object-fit: contain;"></div>
        <div class="swiper-slide"><img loading="lazy" src="img/tilda_images/vkladka_zhurnal.png" alt="SpeedWatch — вкладка Журнал измерений" style="width: 100%; height: 100%; object-fit: contain;"></div>
@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
 <!-- ====================================================== -->
 <a name="premium" style="font-size:0;"></a>
 <div id="premium-top"></div>
-<div id="premium" style="background-color: #f0f2f5; height: 1550px; font-family: Roboto; padding: 10px 0 0 0px;">
+<div id="premium" style="background-color: #f0f2f5; height: auto; font-family: Roboto; padding: 10px 0 40px 0px;">
 
 <div style="display: flex; flex-direction: column; width: 100%;">
  <div style="display: flex; justify-content: center; align-items: center; padding: 20px 0 10px 0;">
@@ -536,7 +536,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
 
  <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1 1 350px; min-width: 300px;">
-   <div class="swiper" style="width: 100%; height: 590px;">
+   <div class="swiper" style="width: 100%; height: auto; min-height: 300px;">
     <div class="swiper-wrapper">
      <div class="swiper-slide"><img loading="lazy" src="img/tilda_images/otchet_den_doc.png" alt="SpeedWatch — отчёт за день в формате Word" style="width: 100%; height: 100%; object-fit: contain;"></div>
      <div class="swiper-slide"><img loading="lazy" src="img/tilda_images/otchet_nedelya_doc.png" alt="SpeedWatch — отчёт за неделю в формате Word" style="width: 100%; height: 100%; object-fit: contain;"></div>
@@ -559,7 +559,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
    <div style="font-size: 20px; color: #333333; line-height: 1.55; margin-bottom: 10px;">Распечатайте для убедительности понятные <strong>ОТЧЕТЫ</strong> о качестве интернета <strong style="color: #ff8c00;">за любой указанный день</strong>, когда были проблемы, <strong style="color: #1a2b4c;">за неделю, в течение месяца, квартала, за целый год.</strong></div>
    <div style="font-size: 20px; color: #333333; line-height: 1.55; margin-bottom: 5px;">Распечатайте <strong>ГРАФИКИ,</strong> на которых наглядно видно, в какое время дня или день недели наблюдается <strong style="color: #ff8c00;">провал скорости</strong> интернета.</div>
       
-<div class="swiper" style="width: 100%; height: 420px; margin-top: 0;">
+<div class="swiper" style="width: 100%; height: auto; min-height: 250px; margin-top: 0;">
  <div class="swiper-wrapper">
   <div class="swiper-slide"><img loading="lazy" src="img/tilda_images/grafik_den.png" alt="SpeedWatch — график скорости за день" style="width: 100%; height: 100%; object-fit: contain;"></div>
   <div class="swiper-slide"><img loading="lazy" src="img/tilda_images/grafik_nedelya.png" alt="SpeedWatch — график скорости за неделю" style="width: 100%; height: 100%; object-fit: contain;"></div>
@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
 
 <div id="premium-bottom" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-top: 40px; padding-top: 80px;">
   <div style="flex: 1 1 40%;">
-   <div style="width: 100%; height: 600px; overflow-y: auto;">
+   <div style="width: 100%; height: auto; max-height: 600px; overflow-y: auto;">
     <img loading="lazy" src="img/tilda_images/journal_table.png" alt="SpeedWatch — журнал измерений скорости интернета" style="width: 100%; height: auto; display: block;">
    </div>
   </div>
@@ -940,7 +940,7 @@ document.querySelector('.faq-question .faq-icon').innerHTML = '▲';
 <style>
 #footer a:hover { color: #004499 !important; }
 </style>
-<div id="footer" style="background-color: #0a0f1f; height: 180px; font-family: Roboto; padding: 20px 0 0 0; display: flex; align-items: flex-start; justify-content: space-between;">
+<div id="footer" style="background-color: #0a0f1f; height: auto; font-family: Roboto; padding: 20px 5%; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
 
 <div style="display: flex; flex-direction: column; gap: 8px; margin-left: 10%;">
  <div style="display: flex; align-items: center; gap: 10px;">
