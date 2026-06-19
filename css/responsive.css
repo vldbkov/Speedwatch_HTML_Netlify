@@ -211,11 +211,10 @@
   }
 
   #home .logo-container {
-    flex-direction: column !important;
-    gap: 5px !important;
+    display: none !important;
   }
-  #home .logo-container span {
-    font-size: 32px !important;
+  #home {
+    padding-top: 60px !important;
   }
   #home [style*="display: flex; align-items: center; gap: 55px"] {
     gap: 20px !important;
