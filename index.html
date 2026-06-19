@@ -135,19 +135,26 @@
  document.addEventListener('DOMContentLoaded', function() {
   new Swiper('.swiper', {
    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-   loop: true
+   loop: true,
+   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+   }
   });
  });
 </script>
 
 </head>
- document.addEventListener('DOMContentLoaded', function() {
-  new Swiper('.swiper', {
-   navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-   loop: true
-  });
- });
-</script>
     
       <link href="https://fonts.gstatic.com" rel="preconnect"/>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;subset=latin,cyrillic" rel="stylesheet"/>
