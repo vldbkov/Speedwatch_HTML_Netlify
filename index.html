@@ -1135,6 +1135,7 @@ document.querySelector('.faq-question .faq-icon').innerHTML = '▲';
 // ======================================================
 (function() {
  var allLinks = document.querySelectorAll('a[href^="#"]');
+ var headerHeight = document.querySelector('#header') ? document.querySelector('#header').offsetHeight : 0;
  for (var i = 0; i < allLinks.length; i++) {
   allLinks[i].addEventListener('click', function(e) {
    var hash = this.getAttribute('href');
@@ -1142,7 +1143,8 @@ document.querySelector('.faq-question .faq-icon').innerHTML = '▲';
    var target = document.querySelector(hash);
    if (target) {
     e.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    var targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
    }
   });
  }
