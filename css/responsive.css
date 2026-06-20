@@ -2,9 +2,7 @@
 /* АДАПТИВНАЯ ВЁРСТКА — MEDIA QUERIES                    */
 /* ====================================================== */
 
-/* ====================================================== */
-/* ПЛАНШЕТЫ (768px – 1024px)                             */
-/* ====================================================== */
+/* ПЛАНШЕТЫ (768px – 1024px) */
 @media screen and (max-width: 1024px) {
 
   /* ===== ШАПКА ===== */
@@ -139,9 +137,7 @@
   }
 }
 
-/* ====================================================== */
-/* ТЕЛЕФОНЫ (до 767px)                                   */
-/* ====================================================== */
+/* ТЕЛЕФОНЫ (до 767px) */
 @media screen and (max-width: 767px) {
 
   /* ===== ШАПКА ===== */
@@ -195,11 +191,10 @@
     background-color: rgba(255, 255, 255, 0.15) !important;
   }
 
-  /* ===== БЛОК HOME ===== */
+    /* ===== БЛОК HOME ===== */
   #home {
     padding: 20px 12px 10px 12px !important;
     min-height: auto !important;
-    padding-top: 60px !important;
   }
 
   .home-success-title {
@@ -217,6 +212,9 @@
 
   #home .logo-container {
     display: none !important;
+  }
+  #home {
+    padding-top: 60px !important;
   }
   #home [style*="display: flex; align-items: center; gap: 55px"] {
     gap: 20px !important;
@@ -249,12 +247,6 @@
   }
 
   /* ===== БЛОК ABOUT ===== */
-  .about-title-full {
-    display: none !important;
-  }
-  .about-title-mobile {
-    display: inline !important;
-  }
   #about {
     padding: 30px 12px !important;
   }
@@ -275,8 +267,6 @@
   #about .swiper {
     height: 280px !important;
   }
-
-
 
   /* ===== БЛОК FEATURES ===== */
   /* Карточки в 1 колонку */
@@ -433,15 +423,4 @@
   .swiper-button-next {
     display: none !important;
   }
-}
-
-
-/* ====================================================== */
-/* БАЗОВЫЕ СТИЛИ (по умолчанию для всех устройств)       */
-/* ====================================================== */
-.about-title-full {
-  display: inline;
-}
-.about-title-mobile {
-  display: none;
 }
