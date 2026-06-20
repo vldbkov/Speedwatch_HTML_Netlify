@@ -191,7 +191,7 @@
     background-color: rgba(255, 255, 255, 0.15) !important;
   }
 
-  /* ===== БЛОК HOME ===== */
+    /* ===== БЛОК HOME ===== */
   #home {
     padding: 20px 12px 10px 12px !important;
     min-height: auto !important;
@@ -315,6 +315,15 @@
   #premium .flex-wrap > div {
     flex: 1 1 100% !important;
   }
+
+  .premium-subtitle {
+    font-size: 20px !important;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    word-break: break-word;
+  }
+
   #premium-bottom > div {
     flex: 1 1 100% !important;
   }
