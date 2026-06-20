@@ -263,6 +263,15 @@
   }
   #about ul {
     font-size: 16px !important;
+    padding-left: 0 !important;
+    list-style-position: inside !important;
+    text-align: left !important;
+  }
+  #about ul li {
+    text-align: left !important;
+    padding-left: 20px !important;
+    text-indent: -20px !important;
+    margin-left: 0 !important;
   }
   #about .swiper {
     height: 280px !important;
