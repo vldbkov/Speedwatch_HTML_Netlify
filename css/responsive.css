@@ -441,4 +441,36 @@
   .swiper-button-next {
     display: none !important;
   }
+  /* Закрытие меню при клике на ссылку */
+  #header-menu a {
+    cursor: pointer;
+  }
+}
+
+/* ====================================================== /
+/ ДЕСКТОП (1024px и выше) /
+/ ====================================================== */
+@media screen and (min-width: 1024px) {
+#header {
+align-items: center !important;
+min-height: 60px !important;
+flex-wrap: nowrap !important;
+}
+#header > div:first-child,
+#header > div:last-child {
+align-items: center !important;
+width: auto !important;
+}
+#header > div:first-child {
+flex: 0 0 auto !important;
+}
+#header > div:last-child {
+flex: 1 1 auto !important;
+flex-wrap: nowrap !important;
+}
+#header #logo-speedwatch {
+display: flex !important;
+align-items: center !important;
+line-height: 1 !important;
+}
 }
