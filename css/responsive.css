@@ -301,6 +301,11 @@
     flex: 1 1 100% !important;
     min-width: 0 !important;
   }
+  /* Скрыть желтую стрелку в блоке Features на мобильных */
+  #features .sos-button-arrow,
+  #features a[href="#premium-top"] {
+    display: none !important;
+  }
 
   /* ===== БЛОК PREMIUM ===== */
   #premium h2 {
