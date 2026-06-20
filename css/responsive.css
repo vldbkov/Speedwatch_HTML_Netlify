@@ -328,7 +328,7 @@
     flex: 1 1 100% !important;
   }
   #premium-bottom .overflow-y-auto {
-    height: 200px !important;
+    height: 100px !important;
   }
 
   /* Скрыть желтые стрелки в Premium на мобильных */
@@ -346,6 +346,10 @@
   .premium-line1,
   .premium-line2 {
     display: block !important;
+  }
+
+  .journal-container {
+    max-height: 300px !important;
   }
 
   /* ===== БЛОК FAQ ===== */
