@@ -4,7 +4,7 @@
   <!-- Главная страница -->
   <url>
     <loc>https://speedwatch-soft.netlify.app/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Страница обратной связи -->
   <url>
     <loc>https://speedwatch-soft.netlify.app/feedback</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -21,7 +21,7 @@
   <!--
   <url>
     <loc>https://speedwatch-soft.netlify.app/404</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <changefreq>never</changefreq>
     <priority>0.1</priority>
   </url>
